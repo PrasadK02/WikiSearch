@@ -1,0 +1,7 @@
+
+<div class="ui container ">
+  <h1 class="ui center aligned header" style="margin-top: 3rem; color: rgb(18, 138, 189);">P.K.Pedia</h1>
+
+</div>
+<app-search-bar (emitter)="onEmit($event)"></app-search-bar>
+<app-page-list *ngIf="pages.length" [pagesIncmg] ='pages'></app-page-list>

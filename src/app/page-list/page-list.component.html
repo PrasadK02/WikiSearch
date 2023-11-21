@@ -1,0 +1,18 @@
+<div class="ui fixed container">
+    <table class="ui fixed inverted teal table">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Word Count</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let page of pagesIncmg">
+               <td>{{page.title}}</td>
+               <td>{{page.wordcount}}</td>
+               <td [innerHTML]="page.snippet"></td>
+            </tr>
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,7 @@
+<form class="ui form card" (submit)="onFormSubmit($event)" style="width: 30rem; margin: 40px 40rem;">
+    <div class="ui input">
+    <!--<input type="text" #input (input)="OnTyping(input.value)">-->
+    <input type="text" #input (input)="term = input.value"  placeholder="Search..." autofocus>
+  </div>
+</form>
+
